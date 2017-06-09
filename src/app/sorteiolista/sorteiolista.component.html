@@ -1,0 +1,13 @@
+<div class="row spaceform">
+    <div class="col-md-12">
+        <a [routerLink]="['/sorteio/cadastro']" class='btn btn-info'>Novo Sorteio</a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h2>Sorteios</h2>
+        <p *ngFor="let sorteio of lista" class="navbar-text">
+            <sorteio titulo="{{sorteio.titulo}}" id="{{sorteio.id}}" entrega="{{sorteio.entrega}}"></sorteio>            
+        </p>
+    </div>
+</div>

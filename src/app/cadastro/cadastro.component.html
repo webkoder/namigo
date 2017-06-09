@@ -1,0 +1,27 @@
+<div class="starter-template">
+    <div class="col-md-6">
+      <div class="card">
+          
+          <h2>Faça seu cadastro</h2>
+          <form action="" (submit)="cadastrar($event)">
+              <div class="row">
+                  <div class="col-md-12">
+                      <input [(ngModel)]='name' type="text" class='form-control spaceform' name="name" placeholder="Nome">
+                      
+                      <input [(ngModel)]='email' type="text" class='form-control spaceform' name="email" placeholder="Email">
+
+                      <input [(ngModel)]='senha1' type="password" class='form-control spaceform' name="senha1" placeholder="Senha">
+
+                      <input [(ngModel)]='senha2' type="password" class='form-control spaceform' name="senha2" placeholder="Confirme sua senha">
+                      </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-12">
+                      <button type="submit" class='btn btn-vas spaceform pull-right'>Cadastrar</button>
+                  </div>
+              </div>
+          </form>
+          
+      </div>
+    </div>
+</div>

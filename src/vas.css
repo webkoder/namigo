@@ -1,0 +1,44 @@
+body {
+  padding-top: 50px;
+  background: #F9F9F0;
+  /*font-family: 'Open Sans', sans-serif;*/
+}
+
+.navbar{
+    border-bottom:1px solid #fb927f;
+    background: #FFFFFF
+}
+
+.starter-template {
+  padding: 40px 15px;
+}
+
+.btn-vas{
+    background:#fb927f;
+    color: #FFFFFF;
+    transition: .2s ease-in-out all;
+}
+
+.btn-vas:hover, .btn-vas:focus{
+    color:#fb927f;
+    background: #FFFFFF;
+    border:1px solid #fb927f;
+    transition: .2s ease-in-out all;
+}
+.card{
+    background: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.22);
+    -moz-box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.22);
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.22);
+    padding: 20px
+}
+
+input{
+    border-radius: 0px!important;
+    font-size: 18px;
+    padding: 20px
+}
+
+.spaceform{
+    margin-bottom:10px
+}

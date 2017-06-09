@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center">Participantes</h2>
+        <div *ngFor="let participante of lista" class="navbar-text">
+            <participante nome="{{participante.nome}}" id="{{participante.id}}" (selecionar)="selecionado($event)"></participante>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12"><participantecadastro (adicionar)="adicionado($event)" eparticipante="{{participante_selecionado}}"></participantecadastro></div>
+</div>

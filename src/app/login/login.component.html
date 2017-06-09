@@ -1,0 +1,29 @@
+<div class="col-md-6 pull-right" style="margin-top:0px; height:40px; overflow:hidden">
+  
+  <div *ngIf="remember_token.length > 0">
+    {{email}} <a href="javascript:return false" (click)="sair()">sair</a>
+  </div>
+  <!--<mensagem texto={{mensagem.texto}} tipo={{mensagem.tipo}}></mensagem>-->
+  
+  <form action="" (submit)="entrar($event)" class="navbar-form navbar-right">
+    
+    <input type="hidden" name="_token" value="{{token}}">
+
+    <div *ngIf="mensagem.texto.length > 0" [class.show]="mensagem.texto.length > 0" class='step msg'>
+      <div class="form-group">
+        {{mensagem.texto}} <button (click)="limpar()" class="btn btn-vas btn-sm">voltar</button>
+      </div>
+    </div>
+    
+    <div *ngIf="mensagem.texto.length == 0 && remember_token.length == 0">
+      <div class="form-group">
+        <input [(ngModel)]='email' name='email' type="text" placeholder="Email" class="form-control input-sm">
+      </div>
+      <div class="form-group">
+        <input [(ngModel)]='password' name='password' type="password" placeholder="Password" class="form-control input-sm">
+      </div>
+      <button type="submit" class="btn btn-vas btn-sm"disabled="{{btnDisabled}}">Entrar</button>
+    </div>
+  </form>
+
+</div>

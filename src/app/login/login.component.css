@@ -1,0 +1,14 @@
+.msg{
+    padding:2px 5px; text-align:center; font-size:12px
+    
+}
+.show{
+    opacity: 1 !important;
+    height: 34px !important;
+    transition: .2s ease-in-out all;
+}
+.step{
+    opacity: 0;
+    height: 0px;
+    transition: .2s ease-in-out all;
+}

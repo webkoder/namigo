@@ -1,0 +1,16 @@
+<p>
+ Cadastro de novo sorteio
+</p>
+
+<form class="row" (submit)="cadastrar($event)">
+  <div class="col-md-12">
+    <label for="sorteio_titulo">Titulo</label><br>
+    <input [(ngModel)]='sorteio.titulo' type="text" name="titulo" id="sorteio_titulo" class="form-control">
+    <label for="sorteio_entrega">Data de entrega</label><br>
+    <input [(ngModel)]='sorteio.entrega' type="date" name="entrega" id="sorteio_entrega" class="form-control">
+    <label for="sorteio_descricao">Descricao</label><br>
+    <textarea [(ngModel)]='sorteio.descricao' name="descricao" id="sorteio_descricao" class="form-control"></textarea>
+    <button type="submit" class="btn btn-success">Salvar</button>
+    <a [routerLink]="['/sorteio']" class="btn btn-danger">Voltar</a>
+  </div>
+</form>

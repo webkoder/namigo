@@ -1,0 +1,19 @@
+<p>
+  <span>Cadastro do participante {{participante.nome}}</span>
+</p>
+
+<form class="row" (submit)="cadastrar($event)">
+  <div class="col-md-12">
+
+    <input type="hidden" name="sorteio_id" [(ngModel)]="participante.sorteio_id">
+    <input type="hidden" name="id" [(ngModel)]="participante.id">
+
+    <label for="participante_nome">Nome</label><br>
+    <input [(ngModel)]='participante.nome' type="text" name="nome" id="participante_nome" class="form-control">
+    
+    <label for="participante_email">Email</label><br>
+    <input [(ngModel)]='participante.email' type="text" name="email" id="participante_email" class="form-control">
+    
+    <button type="submit" class="btn btn-success">Salvar</button>
+  </div>
+</form>
